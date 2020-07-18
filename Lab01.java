@@ -5,6 +5,8 @@
  */
 package lab01;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author patri
@@ -16,6 +18,11 @@ public class Lab01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        PrintedBook book1 = new PrintedBook("Shelf 11", 5, "Penguin", "A Little Moss Soldier", "Gregory Swanson", 18.99, "13710011324");
+        
+        // Display message of Printedbook object
+        JOptionPane.showMessageDialog(null, book1.toString());
     }
     
 }

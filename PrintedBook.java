@@ -34,6 +34,8 @@ public class PrintedBook extends Book {
 
     public void setNum_of_copies(int num_of_copies) {
         this.num_of_copies = num_of_copies;
+        
+        
     }
     
     @Override

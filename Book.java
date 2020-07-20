@@ -32,7 +32,7 @@ public abstract class Book {
     private String book_ISBN;
     
     /**
-    * 
+    * Constructor to instantiate a new book object
     * @param book_publisher
     * @param book_title
     * @param book_author
@@ -47,18 +47,34 @@ public abstract class Book {
         this.book_ISBN = book_ISBN;
     }
 
+    /**
+     * Gets the book's publisher
+     * @return A string representing the book's publisher
+     */
     public String getBook_publisher() {
         return book_publisher;
     }
 
+    /**
+     * Creates a publisher for it's book object
+     * @param book_publisher A String representing the book;s publisher
+     */
     public void setBook_publisher(String book_publisher) {
         this.book_publisher = book_publisher;
     }
 
+    /**
+     * Gets the book's title
+     * @return A string representing the book's title
+     */
     public String getBook_title() {
         return book_title;
     }
 
+    /**
+     * 
+     * @param book_title 
+     */
     public void setBook_title(String book_title) {
         this.book_title = book_title;
     }
@@ -86,6 +102,9 @@ public abstract class Book {
     public void setBook_price(double book_price) {
         this.book_price = book_price;
     }
+    
+    // Require subclasses to override
+    public abstract String toString();
     
     
 }

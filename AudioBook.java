@@ -5,7 +5,7 @@ package lab01;
  * Name of program:Bookstore Management System (BMS) 
  * @author Patrick D
  * Date first created:2020-07-09
- * Date last modified: 2020-07-09
+ * Date last modified: 2020-07-22
  *
  */
 public class AudioBook extends Book {
@@ -14,5 +14,10 @@ public class AudioBook extends Book {
         super(book_publisher, book_title, book_author, book_price, book_ISBN);
     }
 
-    
+    @Override
+    public String toString() {
+        return ("The " + getBook_title() + ", written by " + getBook_author() +
+                ", and published by " + getBook_publisher() + ". ISBN: " +
+                getBook_ISBN() + ". Price: $" + getBook_price() + ".");
+    }
 }

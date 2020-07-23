@@ -1,16 +1,18 @@
 package lab01;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * Name of program:Bookstore Management System (BMS) 
  * @author Patrick D
  * Date first created:2020-07-09
- * Date last modified: 2020-07-09
+ * Date last modified: 2020-07-21
  *
  */
 public class PrintedBook extends Book {
     
-    // declaring subclass variables
+    // Declaring subclass variables
     private String book_location;
     private int num_of_copies;
 
@@ -33,9 +35,7 @@ public class PrintedBook extends Book {
     }
 
     public void setNum_of_copies(int num_of_copies) {
-        this.num_of_copies = num_of_copies;
-        
-        
+        this.num_of_copies = num_of_copies;       
     }
     
     @Override
@@ -46,8 +46,8 @@ public class PrintedBook extends Book {
                 + getBook_location() + ". Copies remaining: " + 
                 getNum_of_copies() + ".");
     }
-    
+}
     
 
  
-}
+

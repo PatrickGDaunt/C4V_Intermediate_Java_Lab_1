@@ -1,13 +1,16 @@
-package lab01;
-
 /**
  *
  * Name of program:Bookstore Management System (BMS) 
  * @author Patrick D
  * Date first created:2020-07-09
- * Date last modified: 2020-07-09
+ * Date last modified: 2020-07-21
  *
  */
+
+package lab01;
+
+import javax.swing.JOptionPane;
+
 public abstract class Book {
 
     /**
@@ -57,7 +60,7 @@ public abstract class Book {
 
     /**
      * Creates a publisher for it's book object
-     * @param book_publisher A String representing the book;s publisher
+     * @param book_publisher A String representing the book's publisher
      */
     public void setBook_publisher(String book_publisher) {
         this.book_publisher = book_publisher;

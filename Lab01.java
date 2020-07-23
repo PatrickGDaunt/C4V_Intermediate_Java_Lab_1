@@ -30,7 +30,7 @@ public class Lab01 {
         // Create empty arrays to store constructor paramters from user inputs
         
         PrintedBook[] p = new PrintedBook[4];
-        AudioBook[] a;
+        AudioBook[] a = new AudioBook[4];
         
         do {
             optionBook = Integer.parseInt(JOptionPane.showInputDialog("Please select "
@@ -52,11 +52,31 @@ public class Lab01 {
                 // Request input for location
                 String locationString = JOptionPane.showInputDialog("Please enter book location");
                 // Request number of copies
-                int numCopiesInt = Integer.parseInt(JOptionPane.showInputDialog("Please enter book quantity"));        
+                int numCopiesInt = Integer.parseInt(JOptionPane.showInputDialog("Please enter book quantity"));
+                // Create new object array element with variables as arguements
                 p[0] = new PrintedBook(locationString, numCopiesInt, publisherString, titleString, authorString, priceDouble, ISBNString); 
              
                 // Display message of Printedbook object
                 JOptionPane.showMessageDialog(null, p[0].toString());
+                
+            } else if (optionBook == 2) {
+                 // Request user input for PrintedBook
+                // Request input for publisher
+                String publisherString = JOptionPane.showInputDialog("Please enter book publisher");
+                // Request input fot title
+                String titleString = JOptionPane.showInputDialog("Please enter book title");
+                // Request input for author
+                String authorString = JOptionPane.showInputDialog("Please enter book author");
+                // Request input for price
+                double priceDouble = Double.parseDouble(JOptionPane.showInputDialog("Please enter book price"));
+                // Request input for ISBN
+                String ISBNString = JOptionPane.showInputDialog("Please enter book ISBN");
+                // Create new object array element with variables as arguements
+                a[0] = new AudioBook(publisherString, titleString, authorString, priceDouble, ISBNString);
+                
+                // Display message of Audiobook object
+                JOptionPane.showMessageDialog(null, a[0].toString());
+                
                 
             } else {
                 break;

@@ -42,7 +42,8 @@ public abstract class Book {
     * @param book_price
     * @param book_ISBN 
     */
-    public Book(String book_publisher, String book_title, String book_author, double book_price, String book_ISBN) {
+    public Book(String book_publisher, String book_title, String book_author, 
+            double book_price, String book_ISBN) {
         this.book_publisher = book_publisher;
         this.book_title = book_title;
         this.book_author = book_author;

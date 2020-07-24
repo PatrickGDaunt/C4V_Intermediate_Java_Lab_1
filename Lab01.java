@@ -91,8 +91,7 @@ public class Lab01 {
             } else {
                 break;
             }
-                
-                
+                                
             // Request to continue of exit
             cont = JOptionPane.showInputDialog("Type 1 to Continue or 2 to Exit");
             continueSearch = Integer.parseInt(cont);

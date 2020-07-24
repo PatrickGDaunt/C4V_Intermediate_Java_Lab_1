@@ -54,7 +54,9 @@ public class Lab01 {
                 // Request number of copies
                 int numCopiesInt = Integer.parseInt(JOptionPane.showInputDialog("Please enter book quantity"));
                 // Create new object array element with variables as arguements
-                p[0] = new PrintedBook(locationString, numCopiesInt, publisherString, titleString, authorString, priceDouble, ISBNString); 
+                p[0] = new PrintedBook(locationString, numCopiesInt, 
+                        publisherString, titleString, authorString, 
+                        priceDouble, ISBNString); 
              
                 // Display message of Printedbook object
                 JOptionPane.showMessageDialog(null, p[0].toString());
@@ -71,8 +73,16 @@ public class Lab01 {
                 double priceDouble = Double.parseDouble(JOptionPane.showInputDialog("Please enter book price"));
                 // Request input for ISBN
                 String ISBNString = JOptionPane.showInputDialog("Please enter book ISBN");
+                // Request generated code location for AudioBook object
+                String gen_locationString = JOptionPane.showInputDialog("Please enter audiobook code generator"
+                        + "location");
+                // Request generated code for AudioBook object
+                String gen_codeString = JOptionPane.showInputDialog("Please enter the generated code for"
+                        + "the audiobook");
                 // Create new object array element with variables as arguements
-                a[0] = new AudioBook(publisherString, titleString, authorString, priceDouble, ISBNString);
+                a[0] = new AudioBook(publisherString, titleString, authorString,
+                        priceDouble, ISBNString, gen_locationString, 
+                        gen_codeString);
                 
                 // Display message of Audiobook object
                 JOptionPane.showMessageDialog(null, a[0].toString());

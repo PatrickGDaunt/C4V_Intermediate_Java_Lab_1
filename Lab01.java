@@ -28,7 +28,6 @@ public class Lab01 {
                
         
         // Create empty arrays to store constructor paramters from user inputs
-        
         PrintedBook[] p = new PrintedBook[4];
         AudioBook[] a = new AudioBook[4];
         
@@ -41,18 +40,25 @@ public class Lab01 {
                 // Request user input for PrintedBook
                 // Request input for publisher
                 String publisherString = JOptionPane.showInputDialog("Please enter book publisher");
+                
                 // Request input fot title
                 String titleString = JOptionPane.showInputDialog("Please enter book title");
+                
                 // Request input for author
                 String authorString = JOptionPane.showInputDialog("Please enter book author");
+                
                 // Request input for price
                 double priceDouble = Double.parseDouble(JOptionPane.showInputDialog("Please enter book price"));
+                
                 // Request input for ISBN
                 String ISBNString = JOptionPane.showInputDialog("Please enter book ISBN");
+                
                 // Request input for location
                 String locationString = JOptionPane.showInputDialog("Please enter book location");
+                
                 // Request number of copies
                 int numCopiesInt = Integer.parseInt(JOptionPane.showInputDialog("Please enter book quantity"));
+                
                 // Create new object array element with variables as arguements
                 p[0] = new PrintedBook(locationString, numCopiesInt, 
                         publisherString, titleString, authorString, 
@@ -65,20 +71,27 @@ public class Lab01 {
                  // Request user input for PrintedBook
                 // Request input for publisher
                 String publisherString = JOptionPane.showInputDialog("Please enter book publisher");
+                
                 // Request input fot title
                 String titleString = JOptionPane.showInputDialog("Please enter book title");
+                
                 // Request input for author
                 String authorString = JOptionPane.showInputDialog("Please enter book author");
+                
                 // Request input for price
                 double priceDouble = Double.parseDouble(JOptionPane.showInputDialog("Please enter book price"));
+                
                 // Request input for ISBN
                 String ISBNString = JOptionPane.showInputDialog("Please enter book ISBN");
+                
                 // Request generated code location for AudioBook object
                 String gen_locationString = JOptionPane.showInputDialog("Please enter audiobook code generator"
                         + "location");
+                
                 // Request generated code for AudioBook object
                 String gen_codeString = JOptionPane.showInputDialog("Please enter the generated code for"
                         + "the audiobook");
+                
                 // Create new object array element with variables as arguements
                 a[0] = new AudioBook(publisherString, titleString, authorString,
                         priceDouble, ISBNString, gen_locationString, 

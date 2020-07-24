@@ -28,9 +28,9 @@ public class AudioBook extends Book {
             double book_price, String book_ISBN, String gen_location, String gen_code) {
         super(book_publisher, book_title, book_author, book_price, book_ISBN);
         this.gen_location = gen_location;
-        this.gen_code = gen_code;
-        
+        this.gen_code = gen_code; 
     }
+    
     /**
      * 
      * @return 
@@ -38,6 +38,7 @@ public class AudioBook extends Book {
     public String getGen_location() {
         return gen_location;
     }
+    
     /**
      * 
      * @param gen_location 
@@ -45,6 +46,7 @@ public class AudioBook extends Book {
     public void setGen_location(String gen_location) {
         this.gen_location = gen_location;
     }
+    
     /**
      * 
      * @return 
@@ -52,6 +54,7 @@ public class AudioBook extends Book {
     public String getGen_code() {
         return gen_code;
     }
+    
     /**
      * 
      * @param gen_code 
@@ -59,7 +62,6 @@ public class AudioBook extends Book {
     public void setGen_code(String gen_code) {
         this.gen_code = gen_code;
     }
-
     
     /**
      * 

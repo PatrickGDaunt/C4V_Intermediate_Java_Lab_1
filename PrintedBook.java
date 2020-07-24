@@ -33,6 +33,7 @@ public class PrintedBook extends Book {
         this.book_location = book_location;
         this.num_of_copies = num_of_copies;
     }
+    
     /**
      * 
      * @return 
@@ -40,6 +41,7 @@ public class PrintedBook extends Book {
     public String getBook_location() {
         return book_location;
     }
+    
     /**
      * 
      * @param book_location 
@@ -47,6 +49,7 @@ public class PrintedBook extends Book {
     public void setBook_location(String book_location) {
         this.book_location = book_location;
     }
+    
     /**
      * 
      * @return 
@@ -54,6 +57,7 @@ public class PrintedBook extends Book {
     public int getNum_of_copies() {
         return num_of_copies;
     }
+    
     /**
      * 
      * @param num_of_copies 
@@ -61,6 +65,7 @@ public class PrintedBook extends Book {
     public void setNum_of_copies(int num_of_copies) {
         this.num_of_copies = num_of_copies;       
     }
+    
     /**
      * 
      * @return 

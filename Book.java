@@ -13,25 +13,11 @@ import javax.swing.JOptionPane;
 
 public abstract class Book {
 
-    /**
-     * Book publisher
-     */
+    // Create super class variables
     private String book_publisher;
-    /**
-     * Book title  
-     */
     private String book_title;
-    /**
-     * Book author   
-     */
     private String book_author;
-    /**
-     * Book price   
-     */
     private double book_price;
-    /**
-     * Book ISBN   
-     */
     private String book_ISBN;
     
     /**
@@ -76,33 +62,57 @@ public abstract class Book {
     }
 
     /**
-     * 
-     * @param book_title 
+     * Creates a title for it's book object
+     * @param book_title A String representing the book's title
      */
     public void setBook_title(String book_title) {
         this.book_title = book_title;
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public String getBook_author() {
         return book_author;
     }
 
+    /**
+     * 
+     * @param book_author 
+     */
     public void setBook_author(String book_author) {
         this.book_author = book_author;
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public String getBook_ISBN() {
         return book_ISBN;
     }
-
+    
+    /**
+     * 
+     * @param book_ISBN 
+     */
     public void setBook_ISBN(String book_ISBN) {
         this.book_ISBN = book_ISBN;
     }
-
+    
+    /**
+     * 
+     * @return 
+     */
     public double getBook_price() {
         return book_price;
     }
-
+    
+    /**
+     * 
+     * @param book_price 
+     */
     public void setBook_price(double book_price) {
         this.book_price = book_price;
     }

@@ -71,6 +71,8 @@ public class AudioBook extends Book {
     public String toString() {
         return ("The " + getBook_title() + ", written by " + getBook_author() +
                 ", and published by " + getBook_publisher() + ". ISBN: " +
-                getBook_ISBN() + ". Price: $" + getBook_price() + ".");
+                getBook_ISBN() + ". Price: $" + getBook_price() + "."
+                + "\nCode Generator location: " + getGen_location()
+                + "\n\tAudiobook code: " + getGen_code());
     }
 }

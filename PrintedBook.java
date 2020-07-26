@@ -17,7 +17,7 @@ public class PrintedBook extends Book {
     private int num_of_copies;
 
     /**
-     * 
+     * Subclass constructor
      * @param book_location
      * @param num_of_copies
      * @param book_publisher
@@ -35,40 +35,40 @@ public class PrintedBook extends Book {
     }
     
     /**
-     * 
-     * @return 
+     * Gets the printed book's location
+     * @return A String representing the book's physical location
      */
     public String getBook_location() {
         return book_location;
     }
     
     /**
-     * 
-     * @param book_location 
+     * Creates the printed book's location 
+     * @param book_location A String representing the book's physical location
      */
     public void setBook_location(String book_location) {
         this.book_location = book_location;
     }
     
     /**
-     * 
-     * @return 
+     * Gets the printed book's number of copies
+     * @return An int representing the number of copies
      */
     public int getNum_of_copies() {
         return num_of_copies;
     }
     
     /**
-     * 
-     * @param num_of_copies 
+     * Creates the printed book's number of physical copies
+     * @param num_of_copies An int representing the number of copies
      */
     public void setNum_of_copies(int num_of_copies) {
         this.num_of_copies = num_of_copies;       
     }
     
     /**
-     * 
-     * @return 
+     * Override super class abstract toString()
+     * @return statement summarizing printed book details 
      */
     @Override
     public String toString() {

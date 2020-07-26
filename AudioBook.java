@@ -15,7 +15,7 @@ public class AudioBook extends Book {
     private String gen_code;
     
     /**
-     * 
+     * Subclass constructor
      * @param book_publisher
      * @param book_title
      * @param book_author
@@ -32,40 +32,40 @@ public class AudioBook extends Book {
     }
     
     /**
-     * 
-     * @return 
+     * Gets the audio book's code generator location
+     * @return A String representing audio book's code generator location
      */
     public String getGen_location() {
         return gen_location;
     }
     
     /**
-     * 
-     * @param gen_location 
+     * Creates a placeholder to store the location for the audio book's code generator
+     * @param gen_location A String representing audio book's code generator location
      */
     public void setGen_location(String gen_location) {
         this.gen_location = gen_location;
     }
     
     /**
-     * 
-     * @return 
+     * Gets the audio book's generated code
+     * @return A String representing the audio book's generated code
      */
     public String getGen_code() {
         return gen_code;
     }
     
     /**
-     * 
-     * @param gen_code 
+     * Creates a placeholder to store the audio book's generated code
+     * @param gen_code A String representing the audio book's generated code
      */
     public void setGen_code(String gen_code) {
         this.gen_code = gen_code;
     }
     
     /**
-     * 
-     * @return 
+     * Override super class abstract toString()
+     * @return statement summarizing audio book details 
      */
     @Override
     public String toString() {

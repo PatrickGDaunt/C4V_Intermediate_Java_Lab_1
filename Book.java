@@ -70,48 +70,48 @@ public abstract class Book {
     }
     
     /**
-     * 
-     * @return 
+     * Gets the book's author
+     * @return A String representing the book's author
      */
     public String getBook_author() {
         return book_author;
     }
 
     /**
-     * 
-     * @param book_author 
+     * Creates an author for it's book object
+     * @param book_author A String representing the book's author
      */
     public void setBook_author(String book_author) {
         this.book_author = book_author;
     }
     
     /**
-     * 
-     * @return 
+     * Gets the book's ISBN
+     * @return A String representing the book's ISBN
      */
     public String getBook_ISBN() {
         return book_ISBN;
     }
     
     /**
-     * 
-     * @param book_ISBN 
+     * Creates an ISBN for it's book object
+     * @param book_ISBN A String representing the book's ISBN
      */
     public void setBook_ISBN(String book_ISBN) {
         this.book_ISBN = book_ISBN;
     }
     
     /**
-     * 
-     * @return 
+     * Gets the book's price
+     * @return A double representing the book's price
      */
     public double getBook_price() {
         return book_price;
     }
     
     /**
-     * 
-     * @param book_price 
+     * Creates a price for it's book object
+     * @param book_price A double representing the book's price
      */
     public void setBook_price(double book_price) {
         this.book_price = book_price;
